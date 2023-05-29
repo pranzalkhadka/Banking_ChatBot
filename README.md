@@ -52,3 +52,11 @@ User: 8904
 
 Chatbot: Dear Pranjal Khadka, your account 8904 has a balance of Rs. 200.
 
+User: I want to check my transcation history
+
+Chatbot: Please provide your name.
+
+User: Pranjal Khadka
+
+Chatbot: The recent transaction for account 8904 is Your account has been credited Rs.600.
+
