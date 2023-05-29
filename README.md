@@ -32,13 +32,13 @@ rasa shell
 3. Interact with the chatbot:
 User: hi
 
-Chatbot: Hello! How can I assist you today?
+  Chatbot: Hello! How can I assist you today?
 
-User: I want to check my acount balance 
+  User: I want to check my acount balance 
 
-Chatbot: Please provide your account number.
+  Chatbot: Please provide your account number.
 
-User: 8904
+  User: 8904
 
-Chatbot: Dear Pranjal Khadka, your account 8904 has a balance of Rs. 200.
+  Chatbot: Dear Pranjal Khadka, your account 8904 has a balance of Rs. 200.
 
