@@ -30,7 +30,8 @@ rasa run actions
 rasa shell
 
 3. Interact with the chatbot:
-User: hi
+
+  User: hi
 
   Chatbot: Hello! How can I assist you today?
 
