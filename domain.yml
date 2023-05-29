@@ -1,0 +1,55 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - check_balance
+  - check_transcation_history
+  - inform
+
+entities:
+  - account_number
+  - name
+  - phone_number
+
+slots:
+  account_number:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: account_number
+  
+  name:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: name
+
+  phone_number:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: phone_number
+
+responses:
+  utter_greet:
+  - text: "Hello! How can I assist you today?"
+
+  utter_goodbye:
+  - text: "Goodbye! Have a nice day."
+
+  utter_ask_account_number:
+  - text: "Please provide your account number."
+
+  utter_ask_name:
+  - text: "Please provide your name."
+
+
+actions:
+  - action_check_balance
+  - action_check_transcation_history
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+

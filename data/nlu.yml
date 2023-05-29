@@ -1,0 +1,71 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hi
+    - hey
+    - hello
+    - hello there
+    - good morning
+    - good evening
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you later
+    - see you
+    - have a nice day
+ 
+- intent: check_balance
+  examples: |
+    - What is my account balance [1234](account_number)
+    - Can you tell me the account balance [5678](account_number)
+    - What is my balance [1234](account_number)
+
+- intent: check_transcation_history
+  examples: |
+    - Show me my transcation history [John Doe](name)
+    - What is the transcation history [Pranjal Khadka](name)
+    - Show me the my recent transcation [Jane Smith](name)
+    - I want to see my transcation [Bibek Shrestha](name)
+    - What is my history of transcation [Anish Kc](name)
+    - Can you show me transcation history [Hari Prasad](name)
+
+- intent: inform
+  examples: |
+    - My account number is [1234](account_number)
+    - The account number is [5678](account_number)
+    - My account number is [8904](account_number)
+    - The account number is [1278](account_number)
+    - My account number is [6723](account_number)
+    - The account number is [6667](account_number)
+    - Phone number: [9876543210](phone_number)
+    - Contact number: [1234567890](phone_number)
+    - Customer name: [Prajin](name)
+    - My name is [John Doe](name)
+    - My name is [Jane Smith](name)
+    - My name is [Pranjal Khadka](name)
+    - My name is [Anish Kc](name)
+    - My name is [Bibek Shrestha](name)
+    - My name is [Hari Prasad](name)
+    - My name is [Pratik Khatri](name)
+    - My name is [Sushil Pandey](name)
+    - My name is [Gita Subedi](name)
+
+- regex: account_number
+  examples: |
+    - [0-9]{4}
+
+- regex: name
+  examples: |
+    - [A-Za-z]+
+
+- regex: phone_number
+  examples: |
+    - [0-9]{10}
