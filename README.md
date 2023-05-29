@@ -4,7 +4,7 @@ This is a chatbot project built using Rasa. The chatbot allows users to check th
 
 ## Installation
 
-1. Install rasa
+1. Install rasa:
 pip install rasa
 
 2. Clone the repository:
@@ -31,8 +31,14 @@ rasa shell
 
 3. Interact with the chatbot:
 User: hi
+
 Chatbot: Hello! How can I assist you today?
+
 User: I want to check my acount balance 
+
 Chatbot: Please provide your account number.
+
 User: 8904
+
 Chatbot: Dear Pranjal Khadka, your account 8904 has a balance of Rs. 200.
+
